@@ -1,0 +1,24 @@
+BEAN class
+ plain old java object:
+all mem are private.. all mem has getters and setters and this class must not implement or extend any java class..
+POJO class : plain old java object:
+all mem are private.. all mem has getters and setters and this class must implement or extend any java class..
+
+
+spring bean:
+this class object has been created by spring container and also lifecycle object has been maintain
+by spring container...
+
+there are 2 approach
+xml file :-
+annotation:
+
+spring container....
+
+xmlBeanFactory
+ApplicationContext.
+
+dependacny injection....
+runtime : variable object -->value...
+setter injection
+constructor injection
