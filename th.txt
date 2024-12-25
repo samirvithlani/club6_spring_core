@@ -31,5 +31,18 @@ stereotype annoation is used to convert any java class to spring bean
 4)@controller: servlet spring bean...
 
 
+JDBC:
+statment interface 
+prepparedstatment interface
+Connection
+
+
+						JDbcTemplate method...
+
+DataSource						
+
+
+
+
 
 
