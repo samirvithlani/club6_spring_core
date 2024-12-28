@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.List;
+
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -13,7 +15,7 @@ public class ProductController {
 
 		
 		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(Config.class);
-		//ProductDao productDao = new ProductDao();
+		//ProductDao productDao =new ProductDao();
 		ProductDao productDao = (ProductDao)ctx.getBean("productDao");
 		ProductBean productBean = new ProductBean();
 		productBean.setName("iphone");
@@ -24,6 +26,12 @@ public class ProductController {
 		}
 		else {
 			System.out.println("product not added..");
+		}
+		
+		List<ProductBean>products = productDao.getAllProducts();
+		for(ProductBean pbean :products) {
+			
+			System.out.println(pbean.getId());
 		}
 
 	}
